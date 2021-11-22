@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "npm run build  && (cd server && nodemon index.js)",
-    "prod-start": "npm run build && (sudo pm2 start /image-storing-frontend-server/server/index.js -i 0)",
+    "prod-start": "sudo npm run build && (sudo pm2 start /image-storing-frontend-server/server/index.js -i 0)",
     "start-client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
