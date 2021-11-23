@@ -9,7 +9,7 @@ async function postImage({image, description}) {
   formData.append("image", image)
   formData.append("description", description);
 
-  const result = await axios.post("http://project-3-backend-LB-1343831669.us-east-1.elb.amazonaws.com/images", formData,
+  const result = await axios.post("http://internal-i-backend-LB-1240427538.us-east-1.elb.amazonaws.com/images", formData,
    {headers: {'Content-Type': 'multipart/form-data'}});
    return result.data;
 }
